@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    To do list!
+{% endblock %}
+
+{% block main %}
+    <h1>TODOS</h1>
+    <div id="div_todo" class="todo-list">
+    <ul class="list-group">
+        {% for row in todo %}
+        <li id="left" class="list-group-item list-group-item-success">{{ row['todo'] }}
+            <a id="right" href="{{ url_for('delete', index=row['id']) }}">Delete</a>
+            <a id="right-done" href="{{ url_for('delete', index=row['id']) }}">Done</a>
+        </li>
+        {% endfor %}
+    </ul>
+    </div>
+    <form id="form_todo" action="{{ url_for('add') }}" method="post">
+        <input autocomplete="off" autofocus type="text" name="todo">
+        <button class="btn btn-primary" type="submit">Add Todo</button>
+    </form>
+{% endblock %}

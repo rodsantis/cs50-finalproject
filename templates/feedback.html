@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block main %}
+    <h1 id="title">To do List App Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" action="/feedback" method="post">
+        <fieldset>
+            <label id="name-label">Name <input autocomplete="off" autofocus id="name" name="name" placeholder="Enter your name" type="text"></label>
+            <label id="number-label">Age <input id="number" min="13" max="120" name="age" placeholder="Age" type="number"></label>
+            <label>How did you hear about us?
+                <select id="dropdown" name="heard-us">
+                <option selected disabled>(not selected)</option>
+                <option>Blog</option>
+                <option>Forum</option>
+                <option>Friend</option>
+                <option>Search result</option>
+                <option>Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <textarea autocomplete="off" autofocus name="feedback" id="feedback" placeholder="Write us a feedback" rows="4" cols="50"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+{% endblock %}

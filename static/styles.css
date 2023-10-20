@@ -1,0 +1,106 @@
+. todo-list {
+    width: 80%;
+    background-color: #ffd700;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+
+a[id="right"] {
+    display: inline-block;
+    float: right;
+    margin: 0px 0px 0px 10px;
+}
+
+a:link {
+    color: #4939B3;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+div[id="div_todo"] {
+    margin: 10px 100px 10px 100px;
+}
+
+form[id="form_todo"] {
+    margin: 30px 0px 0px 0px;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/top-view-desk-concept-with-clipboard_23-2148236826.jpg?w=996&t=st=1697726422~exp=1697727022~hmac=95497b7d212c5528de46954c7c68ca933d814687c976f52c15183ed5fda4283f");
+}
+
+a[id="right-done"] {
+    display: inline-block;
+    float: right;
+}
+h1[id="outer-title"] {
+    margin: 1em auto;
+    text-align: center;
+}
+p[id="outer-description"] {
+    margin: 1em auto;
+    text-align: center;
+}
+form[id="outer-survey-form"] {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+h1[id="title"] {
+    margin: 1em auto;
+    text-align: center;
+}
+p[id="description"] {
+    margin: 1em auto;
+    text-align: center;
+}
+form[id="survey-form"] {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #000000;
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    forn-size: 1.1rem;
+    min-width: 300px;
+}

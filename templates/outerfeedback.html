@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block main %}
+    <h1 id="outer-title">To do List App Survey Form</h1>
+    <p id="outer-description">Thank you for taking the time to help us improve the platform</p>
+    <form id="outer-survey-form" action="/outerfeedback" method="post">
+        <fieldset>
+            <label id="outer-name-label">Name <input autocomplete="off" autofocus id="outername" name="outername" placeholder="Enter your name" type="text"></label>
+            <label id="outer-username-label">Username <input autocomplete="off" autofocus id="username" name="username" placeholder="Enter your username" type="text"></label>
+            <label id="outer-email-label">Email <input autocomplete="off" autofocus id="outeremail" name="outeremail" placeholder="Enter your Email" type="email"></label>
+            <label id="outer-number-label">Age <input id="outernumber" min="13" max="120" name="outerage" placeholder="Age" type="number"></label>
+            <label>How did you hear about us?
+                <select id="outerdropdown" name="outerheard">
+                <option selected disabled>(not selected)</option>
+                <option>Blog</option>
+                <option>Forum</option>
+                <option>Friend</option>
+                <option>Search result</option>
+                <option>Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <textarea autocomplete="off" autofocus name="outerfeedback" id="outerfeedback" placeholder="Write us a feedback" rows="4" cols="50"></textarea>
+        </fieldset>
+        <input id="outersubmit" type="submit" value="Submit">
+    </form>
+{% endblock %}

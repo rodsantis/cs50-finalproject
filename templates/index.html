@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="d-grid gap-2">
+        <form action="/todo" id="todo_button" method="get" name="todo-button">
+            <input class="btn btn-primary" name="todo-button" type="submit" role="button" value="To do!">
+        </form>
+        <form action="/feedback" id="feedback_button" method="get" name="feedback-button">
+            <input class="btn btn-primary" name="feedback-button" type="submit" role="button" value="Feedback">
+        </form>
+    </div>
+{% endblock %}
