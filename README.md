@@ -1,7 +1,5 @@
 # Flask Productivity To do App
 
-#### Video Demo:  https://youtu.be/8F2GsUtMKrI
-
 
 #### Description:
 In my final project I've created a Web App using Python, SQLite, HTML and CSS, with the help also of Flask and jinja syntax.
